@@ -33,10 +33,7 @@ val countOfUnCommonWords = mutableMapOf<String, MutableSet<Recall>>(
 val inputFile = File("recalls.txt")
 var fileContent = listOf<String>()
 
-val outputCommonFile = File("analizeCommonWords.txt")
-val outputUnCommonFile = File("analizeUnCommonWords.txt")
-val regex = Regex("[a-zA-Zа-яА-ЯёЁ0-9]+")
-fun main(args: Array<String>) {
+
     if (inputFile.exists()) {
         fileContent = inputFile.bufferedReader().readLines()
         println("Созданы файлы \"analizeCommonWords.txt\" и \"analizeUnCommonWords.txt\"")
